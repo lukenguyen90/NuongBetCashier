@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DeskComponent } from './desks/components/desk.component';
+import { DeskPosComponent } from './home/deskPos/components/deskPos.component';
 
 @Component({
   selector: 'my-app',
@@ -7,6 +7,6 @@ import { DeskComponent } from './desks/components/desk.component';
 			<desk-list></desk-list>
   			`
 })
-export class AppComponent  {
+export class HomeComponent  {
 	name = "angular";
 }

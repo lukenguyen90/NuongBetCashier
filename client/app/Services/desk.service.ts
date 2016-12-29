@@ -1,7 +1,7 @@
 // Imports
 import { Injectable }     from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
-import { Desk }           from '../model/desk';
+import { Desk }           from '../Models/desk';
 import {Observable} from 'rxjs/Rx';
 
 // Import RxJs required methods

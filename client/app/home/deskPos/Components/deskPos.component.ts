@@ -1,7 +1,7 @@
 import { Component} from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Desk } from '../model/desk';
-import { DeskService } from '../services/desk.service';
+import { Desk } from '../../../Models/desk';
+import { DeskService } from '../../../Services/desk.service';
 
 @Component({
 	selector: 'desk-list',
@@ -15,7 +15,7 @@ import { DeskService } from '../services/desk.service';
 			`
 })
 
-export class DeskComponent {
+export class DeskPosComponent {
 	constructor(
 		private deskService : DeskService
 	) {}

@@ -11,17 +11,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
-var app_component_1 = require('./app.component');
-var desk_component_1 = require('./desks/components/desk.component');
-var desk_service_1 = require('./desks/services/desk.service');
+var home_component_1 = require('./home.component');
+var deskPos_component_1 = require('./home/deskPos/components/deskPos.component');
+var desk_service_1 = require('./Services/desk.service');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, http_1.HttpModule, http_1.JsonpModule],
-            declarations: [app_component_1.AppComponent, desk_component_1.DeskComponent],
-            bootstrap: [app_component_1.AppComponent, desk_component_1.DeskComponent],
+            declarations: [home_component_1.HomeComponent, deskPos_component_1.DeskPosComponent],
+            bootstrap: [home_component_1.HomeComponent, deskPos_component_1.DeskPosComponent],
             providers: [desk_service_1.DeskService]
         }), 
         __metadata('design:paramtypes', [])

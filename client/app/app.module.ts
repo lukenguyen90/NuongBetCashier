@@ -1,14 +1,14 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule, JsonpModule } from '@angular/http';
-import { AppComponent }  from './app.component';
-import { DeskComponent } from './desks/components/desk.component';
+import { HomeComponent }  from './home.component';
+import { DeskPosComponent } from './home/deskPos/components/deskPos.component';
 
-import { DeskService } from './desks/services/desk.service';
+import { DeskService } from './Services/desk.service';
 @NgModule({
   imports:      [ BrowserModule, HttpModule, JsonpModule ],
-  declarations: [ AppComponent, DeskComponent ],
-  bootstrap:    [ AppComponent, DeskComponent ],
+  declarations: [ HomeComponent, DeskPosComponent ],
+  bootstrap:    [ HomeComponent, DeskPosComponent ],
   providers: [DeskService]
 })
 export class AppModule { }
