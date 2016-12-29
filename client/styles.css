@@ -1,0 +1,17 @@
+.desk-pos {
+    background-color: aqua;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    max-width: 150px;
+    min-height: 150px;
+}
+
+.desk-pos-name {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.desk-pos-type {
+
+}
