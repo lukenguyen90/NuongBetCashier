@@ -13,7 +13,7 @@ function deskAPI(app) {
             if (err) {
                 res.jsonp({ "Error": true, "Message": "Error executing MySQL query" });
             } else {
-                res.jsonp({ "Error": false, "Message": "Success", "data": data });
+                res.jsonp(data);
             }
         })
     });
@@ -47,5 +47,6 @@ function deskAPI(app) {
             }
         })
     });
+    
     return router
 }

@@ -17,7 +17,7 @@ var DeskPosComponent = (function () {
     DeskPosComponent.prototype.loadDesks = function () {
         var _this = this;
         return this.deskService.getDesks()
-            .subscribe(function (desks) { return _this.desks = desks.data; }, //Bind to view
+            .subscribe(function (desks) { return _this.desks = desks; }, //Bind to view
         function (//Bind to view
             err) {
             // Log errors if any

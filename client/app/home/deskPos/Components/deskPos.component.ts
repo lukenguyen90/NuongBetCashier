@@ -25,7 +25,7 @@ export class DeskPosComponent {
 	loadDesks() {
 		return this.deskService.getDesks()
 								.subscribe(
-                               desks => this.desks = desks.data, //Bind to view
+                               desks => this.desks = desks, //Bind to view
                                 err => {
                                     // Log errors if any
                                     console.log(err);
